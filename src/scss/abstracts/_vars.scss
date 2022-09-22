@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+
+  /*font*/
+  --font-bebas: 'Bebas Neue', cursive;
+  --font-weight: 500;
+  --font-size-lg: 1.125rem; //18px
+
+  /*color*/
+
+  // primary
+
+  --errors--color--primary:hsl(0, 100%, 66%);
+  --active--color--primary: hsl(249, 99%, 64%) to hsl(278, 94%, 30%) ;
+
+  // neutral
+
+  --neutral--color--white:hsl(0, 0%, 100%);
+  --neutral--color--Light-grayish-violet:hsl(270, 3%, 87%);
+  --neutral--color--dark-grayish-violet:hsl(279, 6%, 55%);
+  --neutral--color--very-dark-violet:hsl(278, 68%, 11%);
+
+
+
+
+
+  /*spacer*/
+}

@@ -1,0 +1,57 @@
+@import "../../../scss/abstracts/vars";
+
+:host{
+  --input-field-color--label: hsl(278, 94%, 30%);;
+  --input-field-border--color: var(--neutral--color--Light-grayish-violet);
+
+
+}
+
+.input-field{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__floating-label{
+    color: var(--input-field-color--label);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  &__container{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px ;
+    border:1px solid var(--input-field-border--color);
+
+    &-input{
+      border: none;
+      appearance: none;
+      padding: 8px;
+      width: 100%;
+      font-size: 18px;
+
+      &::placeholder {
+        opacity: var(--zt-text-field-opacity-placeholder);
+        color: var(--input-field-border--color);
+      }
+
+      &:focus {
+        outline: none;
+        // opacity: 0.5;
+        // cambiar estilos cuando escuchemos al metodo focus
+        border: 1px solid  var(--input-field-color--label);
+      }
+    }
+  }
+}
+
+:host-context(app-input-field.ng-invalid.ng-touched) {
+  & > .input-field .input-field__container {
+    // styles error error
+  }
+}

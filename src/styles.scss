@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/*abstracts*/
+@use './scss//abstracts/vars';
+@use './scss//abstracts/mixin';
+
+/*base*/
+@use './scss/base/base';
+@use './scss/base/reset';
