@@ -1,0 +1,16 @@
+:host{
+  --app-button-color--text: var(--neutral--color--white);
+  --app-button-background-color: var(--neutral--color--very-dark-violet);
+
+
+}
+
+
+.app-button{
+  width: 100%;
+  background-color: var(--app-button-background-color);
+  color: var(--app-button-color--text);
+  border-radius: 4px;
+  padding: 12px;
+
+}

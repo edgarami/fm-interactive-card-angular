@@ -1,4 +1,21 @@
-<p>add-credit-card works!</p>
+<!-- <p>add-credit-card works!</p>
 <app-input-field placeholder="e.g.Jane Appleseed" label="cardholder name"></app-input-field>
 <app-input-field placeholder="e.g.1234567891210000" label="card number"></app-input-field>
 
+<p>expired date (MM/YY)</p>
+<div class="content">
+  <div class="content-flex-layout">
+        <app-input-field placeholder="MM"></app-input-field>
+    <app-input-field placeholder="YY"></app-input-field>
+  </div>
+  <div class="content-flex-layout">
+    <app-input-field placeholder="cvc" ></app-input-field>
+  </div>
+</div>
+
+<app-button (btnClick)="onClickConfirm()">Confirm</app-button> -->
+
+
+<app-credit-card [srcFront]="_srcFront" [srcBack]="_srcBack" ></app-credit-card>
+
+<!-- <img src="./../../../../assets/images/bg-card-back.png" alt=""> -->

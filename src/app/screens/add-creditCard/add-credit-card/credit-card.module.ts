@@ -12,4 +12,4 @@ import { SharedModule } from 'src/app/components/shared/shared.module';
     SharedModule,
   ]
 })
-export class CreditCardModule { }
+export class CreditCardScreenModule { }
