@@ -3,8 +3,10 @@
      <img [src]="_srcBack" alt="_alt">
   </div>
   <div class="app-credit-card__front">
-    <p class="app-credit-card__front--number">000000000000000000</p>
-    <div class="app-credit-card__front--labels">
+    <div class="app-credit-card__front-container" *ngFor="let item of cardNumberToShow">
+      <p class="app-credit-card__front-container--number">{{item}}</p>
+    </div>
+    <div class="app-credit-card__front-container--labels">
     <p>edgar</p>
     <p>2202</p>
     </div>

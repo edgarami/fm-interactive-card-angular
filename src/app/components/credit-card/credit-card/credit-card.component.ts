@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./credit-card.component.scss']
 })
 export class CreditCardComponent implements OnInit {
+  str = "0000000000000000";
+  cardNumberToShow : any
 
   @Input() set srcBack(value:string){
     this._srcBack = value
@@ -27,6 +29,14 @@ export class CreditCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.splitCardNumber(this.str)
+  }
+
+  splitCardNumber(numberCard : string){
+
+    this.cardNumberToShow = numberCard.match(/.{1,4}(.$)?/g);
+    console.log(this.cardNumberToShow)
+
   }
 
 }
